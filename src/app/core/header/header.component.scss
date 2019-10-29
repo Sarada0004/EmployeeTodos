@@ -1,0 +1,113 @@
+header{ background: #000; color: #fff; height: 60px; padding:10px; line-height: 40px; position:fixed; top: 0px; width: 100%; z-index: 9;}
+.search-bg {
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: .25rem;
+
+}
+
+.search-bg .input-group .btn {
+    background: #000;
+}
+
+.input-group>.custom-select:not(:last-child),
+.input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    height: 38px;
+    border-bottom-right-radius: 0;
+    background: #fff;
+    font-size: 14px;
+    color: #666;
+    border: 1px solid #000;
+}
+
+.search-with-input-form{
+    position: relative;
+}
+.search-with-input-form .btn-group{
+    background: #1d1c1c;
+    border: 0.5px solid #707070;
+    color: #fff;
+    height: 42px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+.search-with-input-form .btn-group .btn{
+    flex: 0 0 44px;
+    height: 40px;
+    border-radius: 0;
+    background: #000;
+    border: none;
+    border-right: 1px solid #707070;
+}
+.search-with-input-form .btn-group .btn:focus{
+    box-shadow: none;
+}
+
+.search-with-input-form .selectize-control .selectize-input {
+    background: transparent;
+    border: 0.5px solid transparent;
+    color: #fff;
+    height: calc(1.5em + .75rem + 9px);
+    line-height: 1.5;
+    padding-left: 20px;
+    padding: 10px 8px;
+
+}
+.search-with-input-form .selectize-control .selectize-input:after{
+    border-color: #707070 transparent transparent transparent;
+}
+
+.search-with-input-form.main-page-search{
+    position: fixed;
+    left: 120px;
+    top: 100px;
+    width: 258px;
+}
+
+.search-with-input-form .selectize-control.single .selectize-input.input-active .item {
+  color: #000;
+}
+.search-with-input-form .selectize-control .selectize-input:after{
+    border: none;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f002";
+    font-weight: 900;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;;
+    height: 100%;
+    width: 30px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    right: 0;
+    top: 3px;
+    position: absolute;
+}
+.searchangle {
+
+    font-size: 22px !important;
+    position: relative;
+}
+
+.input-group-text{ background: #000}
+
+.logo_haims{ float: left;
+    text-align: center;
+    width: 40px;
+    margin-top: -4px;
+    margin-right: 10px;}
+
+.sidebar_toogle{float: left;
+    width: 60px;
+    font-size: 29px;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;}
+.sidebar_toogle a{ color: #fff; font-size: 34px;}
+
+.sidebar_toogle{ cursor: pointer;}

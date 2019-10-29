@@ -1,0 +1,18 @@
+  <nav class="navbar navbar-light">
+      <div class="container">
+        <ul class="nav navbar-nav pull-xs-right">
+          <li class="nav-item">
+              <a  [hidden]="constantService.USER_LOGGEDIN" type="button" [routerLink]="['/login']" class="btn btn-primary" data-toggle="tooltip" 
+              data-placement="bottom" title="Log Out"><i class="fas fa-power-off"></i>Login</a>
+          </li>
+    
+          <li class="nav-item">
+              <a  [hidden]="!constantService.USER_LOGGEDIN" type="button" (click)="logout()" [routerLink]="['/login']" class="btn btn-primary" data-toggle="tooltip"
+              data-placement="bottom" title="Login" ><i class="fas fa-sign-in-alt"></i>Logout</a>
+          </li>
+    
+        </ul>
+    
+      </div>
+    </nav>
+  

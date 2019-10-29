@@ -1,0 +1,144 @@
+.filter {
+    border-top: 1px solid #4e4e4e;
+    background-color: #000;
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.filter .form-group {
+    margin-bottom: 0px;
+}
+
+.filter .form-control {
+    border: 1px solid #3e3e3e;
+    background: #000;
+    color: #FFF;
+}
+
+.table_view {
+    color: #fff;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.table_view table {
+    background: #FFF3E0;
+    color: #000;
+    border-color: #333;
+    // margin-top: 0.2%;
+}
+
+.table_view table th {
+    color: #fff;
+    padding: 3px 10px;
+    border-color: #333;
+    border-right: 1px solid #333;
+    background: #4d4c4e;
+    font-weight: 400;
+    font-size: 16px;
+    z-index: 0 !important;
+}
+
+.table_view table td {
+    padding: 3px 10px;
+    border-right: 1px solid #333;
+}
+
+.table_view table tr:nth-child(2n+1) td {
+    background-color: #EFEBE9;
+}
+
+.cdk-column-nitrogen {
+    background-color: #FFF176 !important;
+    color: #000 !important
+}
+
+.cdk-column-phosporous {
+    background-color: #C5E1A5 !important;
+    color: #000 !important
+}
+
+.cdk-column-potassium {
+    background-color: #B3E5FC !important;
+    color: #000 !important
+}
+
+.cdk-column-nitrogen_quota,
+.cdk-column-nitrogen_purchase {
+    background-color: #FFF176 !important;
+    border-color: #333;
+    color: #000 !important
+}
+
+.cdk-column-phosporous_quota,
+.cdk-column-phosporous_purchase {
+    background-color: #C5E1A5 !important;
+    border-color: #333;
+    color: #000 !important
+}
+
+.cdk-column-potassium_quota,
+.cdk-column-potassium_purchase {
+    background-color: #B3E5FC !important;
+    border-color: #333;
+    color: #000 !important
+}
+
+.mat-sort-header-button {
+    text-transform: capitalize;
+}
+
+.mat_search {
+    width: 100%;
+    padding:10px 0 0px 0;
+    background: #404040;
+    color: #fff;
+}
+
+::ng-deep footer {
+    // position: relative;
+    bottom: 0px;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix {
+    padding: 0px !important
+}
+
+::ng-deep tr.mat-footer-row,
+::ng-deep tr.mat-row {
+    height: 36px !important;
+}
+
+::ng-deep tr.mat-header-row {
+    height: 36px !important;
+}
+
+.even {
+    background-color: #164881 !important;
+}
+
+.odd {
+    background-color: #20538d !important
+}
+
+::ng-deep .mat-icon-button {
+    background: none !important;
+    color: #fff;
+}
+
+// ::ng-deep .mat-paginator-container{    min-height: 26px!important;}
+::ng-deep .mat-paginator-page-size {
+    display: flex;
+    align-items: center;
+}
+.mat-paginator-outer-container{
+    background: #404040 !important;
+}
+.mat-elevation-z8{
+    height: calc(100vh - 27vh);
+    overflow: auto;
+}

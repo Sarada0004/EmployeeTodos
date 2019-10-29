@@ -1,0 +1,32 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <div class="jumbotron">
+        <h2>Employee Details</h2>
+        <form name="form" [formGroup]="form" >
+          <div class="form-group">
+            <label for="id">ID</label>
+            <input type="number"  class="form-control" formControlName="id" [ngClass]="{'is-invalid':form.get('id').touched && form.get('id').invalid}" required  [disabled]="true" onwheel="this.blur()"/>
+            <div class="invalid-feedback">
+              <div>Id is required and it should be number</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Name</label>
+            <input type="text" class="form-control" formControlName="name" [ngClass]="{'is-invalid':form.get('name').touched && form.get('name').invalid}" required />
+            <div class="invalid-feedback">
+              <div>Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary"  [disabled]="!form.valid" (click)="form.valid && employeeDetailsAdd()" >Register</button>
+          </div>
+        </form>
+          <div>
+            <button class="btn btn-danger" (click)="Cancel()">Cancel</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

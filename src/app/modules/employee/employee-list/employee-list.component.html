@@ -1,0 +1,74 @@
+
+<div class="table_view">
+        <div class="example-header">
+                <mat-form-field class="mat_search"
+                    >
+                    <div class="row">
+                        <div class="col-2">
+                                <label class="float-left" style="line-height: 210%; margin:0 10px 0 0">Search</label>
+                            <input matInput (keyup)="applyFilter($event.target.value)"
+                                style="border: 1px solid #616161; height: 35px; border-radius: 5px; width: 70%; float: left;">
+                        </div>
+
+                        <div class="col-9 text-right">
+                            <mat-paginator #paginator [pageSize]="20" [hidePageSize]="true"
+                               >
+                            </mat-paginator>
+                        </div>
+                    </div>
+                </mat-form-field>
+            </div>
+    <div >
+   
+        <!-- <table mat-table [dataSource]="dataSource" #mytable class="my-table" matSort>
+    
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> ID. </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+        <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let element" class="action-link"> 
+            <a (click)="editEmployee(element)">Edit</a> | 
+            <a (click)="deleteEmployee(element)">Delete</a>  
+            </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table> -->
+
+        <table #myTable mat-table  [dataSource]="dataSource" matSort style="border:1px"
+        class="w-100" >
+        <ng-container  matColumnDef="id">
+            <th class="text-center" mat-header-cell *matHeaderCellDef
+                mat-sort-header>Id</th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+        <ng-container  matColumnDef="name">
+          <th class="text-center" mat-header-cell *matHeaderCellDef
+              mat-sort-header>Name</th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+        <ng-container  matColumnDef="action">
+          <th class="text-center" mat-header-cell *matHeaderCellDef
+              mat-sort-header>Action</th>
+          <td mat-cell *matCellDef="let element"> 
+            <a (click)="editEmp(element)">Edit</a>
+            <a (Click)="deleteEmp(element)">Delete</a>
+          </td>
+      </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+       
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+    </table>
+    </div>
+</div>
+<button  class="btn btn-primary"  (click)="addEmployee()">Add Employee</button>
